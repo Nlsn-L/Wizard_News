@@ -8,14 +8,14 @@ app.get("/", (req, res) => {
   
   const post = postBank.list();
 
-  const html = `!<DOCTYPE html>
+  const html = `<!DOCTYPE html>
   <html>
   <head>
     <title>Wizard News</title>
   </head>
   <body>
   <ul>
-    ${post.map(post => `<li>${/* */ }</li>`)}
+    ${post.map(post => `<li>${post.title }</li>`)}
   </ul>
   </body>
   </html>`
